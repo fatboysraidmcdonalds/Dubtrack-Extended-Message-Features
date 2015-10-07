@@ -19,21 +19,50 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 				Dubtrack.room.chat.sendMessage = function(){
 					var c = users.children;
 					var all = "";
+					var dj = "";
+					var notdj = "";
+					var mods = "";
+					var notmods = "";
 					var i;
 					for (i = 0; i < c.length; i++) {
 						var name = c[i].className;
 						var split = name.split(/\s+/);
 						var j;
+						var ident = "";
 						for (j = 0; j < split.length; j++) {
 							var k = split[j];
 							var test = k.substr(0,5);
-							var ident = k.substr(5);
+							var found = k.substr(5);
 							if (test == "user-") {
-								if (ident != me) {
-									all = all.concat("@").concat(ident).concat(" ");
-									break;
+								if (found != me) {
+									ident = found;
+								}
+								break;
+							}
+						}
+						var ismod = false;
+						var isdj = false;
+						var append = ("@").concat(ident).concat(" ");
+						if (ident != "") {
+							all = all.concat(append);
+							for (j = 0; j < split.length; j++) {
+								var k = split[j];
+								if (k == "mod") {
+									ismod = true;
+								} else if (k == "dj") {
+									isdj = true;
 								}
 							}
+						}
+						if (ismod == true) {
+							mods = mods.concat(append);
+						} else {
+							notmods = notmods.concat(append);
+						}
+						if (isdj == true) {
+							dj = dj.concat(append);
+						} else {
+							notdj = notdj.concat(append);
 						}
 					}
 					var msg = chat.value;
@@ -48,7 +77,15 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 						var mine = toreplace[i];
 						if (mine == "@all"){
 							todo = todo.concat(all);
-						} else {
+						} else if (mine == "@dj"){
+							todo = todo.concat(dj);
+						} else if (mine == "@mods"){
+							todo = todo.concat(mods);
+						} else if (mine == "@notdj"){
+							todo = todo.concat(notdj);
+						} else if (mine == "@notmods"){
+							todo = todo.concat(notmod);
+						} else{
 							todo = todo.concat(mine);
 						}
 					}
