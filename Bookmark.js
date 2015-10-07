@@ -1,1 +1,1 @@
-javascript:void((function(){var script=document.createElement('script');script.type='text/javascript';script.src='https://raw.githubusercontent.com/fatboysraidmcdonalds/Dubtrack-Message-Rules/master/Source';document.body.appendChild(script);}()));
+javascript:void((function(){var script=document.createElement('script');script.type='text/javascript';script.src='https://raw.githubusercontent.com/fatboysraidmcdonalds/Dubtrack-Message-Rules/master/Source.js';document.body.appendChild(script);}()));
