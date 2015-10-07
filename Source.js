@@ -1,4 +1,4 @@
-javascript:void( //Remove "javascript:" if you don't want this as a bookmark
+javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 	(function(){
 		try{
 			var chat = document.getElementById("chat-txt-message");
