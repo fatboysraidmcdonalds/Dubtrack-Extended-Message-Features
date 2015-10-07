@@ -4,7 +4,7 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 			var chat = document.getElementById("chat-txt-message");
 			var users = document.getElementById("avatar-list");
 			if (Dubtrack.room.chat.fatboysraidmcdonaldsSendMessage == true){
-				alert("Message Rules by Fatboysraidmcdonalds already loaded");
+				alert("Extended Message Features by Fatboysraidmcdonalds already loaded");
 			}else{
 				Dubtrack.room.chat.fatboysraidmcdonaldsSendMessage = true;
 				var SendChat = Dubtrack.room.chat.sendMessage.bind(Dubtrack.room.chat);
@@ -65,7 +65,7 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 					}
 					Say(current);
 				};
-				alert("Message Rules by Fatboysraidmcdonalds loaded successfully");
+				alert("Extended Message Features by Fatboysraidmcdonalds loaded successfully");
 			}
 		}catch(err){
 			alert(err);
