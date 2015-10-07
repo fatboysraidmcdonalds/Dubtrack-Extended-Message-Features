@@ -4,7 +4,7 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 			var chat = document.getElementById("chat-txt-message");
 			var users = document.getElementById("avatar-list");
 			var me_button = document.getElementsByClassName("user-info-button")[0];
-			var me_span = me_header.getElementsByTagName("span")[0];
+			var me_span = me_button.getElementsByTagName("span")[0];
 			var me = me_span.text;
 			if (Dubtrack.room.chat.fatboysraidmcdonaldsSendMessage == true){
 				alert("Extended Message Features by Fatboysraidmcdonalds already loaded");
