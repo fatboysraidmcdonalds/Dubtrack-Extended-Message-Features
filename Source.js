@@ -23,11 +23,11 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 					var notdj = "";
 					var mods = "";
 					var notmods = "";
-					var i;
+					var i = 0;
 					for (i = 0; i < c.length; i++) {
 						var name = c[i].className;
 						var split = name.split(/\s+/);
-						var j;
+						var j = 0;
 						var ident = "";
 						for (j = 0; j < split.length; j++) {
 							var k = split[j];
@@ -45,24 +45,25 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 						var append = ("@").concat(ident).concat(" ");
 						if (ident != "") {
 							all = all.concat(append);
+							j = 0;
 							for (j = 0; j < split.length; j++) {
 								var k = split[j];
 								if (k == "mod") {
 									ismod = true;
-								} else if (k == "dj") {
+								} else if (k == "currentDJ") {
 									isdj = true;
 								}
 							}
-						}
-						if (ismod == true) {
-							mods = mods.concat(append);
-						} else {
-							notmods = notmods.concat(append);
-						}
-						if (isdj == true) {
-							dj = dj.concat(append);
-						} else {
-							notdj = notdj.concat(append);
+							if (ismod == true) {
+								mods = mods.concat(append);
+							} else {
+								notmods = notmods.concat(append);
+							}
+							if (isdj == true) {
+								dj = dj.concat(append);
+							} else {
+								notdj = notdj.concat(append);
+							}
 						}
 					}
 					var msg = chat.value;
