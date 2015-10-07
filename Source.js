@@ -23,6 +23,8 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 					var notdj = "";
 					var mods = "";
 					var notmods = "";
+					var creator = "";
+					var notcreator = "";
 					var i = 0;
 					for (i = 0; i < c.length; i++) {
 						var name = c[i].className;
@@ -42,6 +44,7 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 						}
 						var ismod = false;
 						var isdj = false;
+						var iscreator = false;
 						var append = ("@").concat(ident).concat(" ");
 						if (ident != "") {
 							all = all.concat(append);
@@ -52,12 +55,21 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 									ismod = true;
 								} else if (k == "currentDJ") {
 									isdj = true;
+								} else if (k == "creator") {
+									ismod = true;
+									iscreator = true;
 								}
 							}
 							if (ismod == true) {
 								mods = mods.concat(append);
+								if (iscreator == true) {
+									creator = creator.concat(append);
+								} else {
+									notcreator = notcreator.concat(append);
+								}
 							} else {
 								notmods = notmods.concat(append);
+								notcreator = notcreator.concat(append);
 							}
 							if (isdj == true) {
 								dj = dj.concat(append);
@@ -80,12 +92,16 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 							todo = todo.concat(all);
 						} else if (mine == "@dj"){
 							todo = todo.concat(dj);
-						} else if (mine == "@mods"){
-							todo = todo.concat(mods);
 						} else if (mine == "@notdj"){
 							todo = todo.concat(notdj);
-						} else if (mine == "@notmods"){
+						} else if (mine == "@mod"){
+							todo = todo.concat(mods);
+						} else if (mine == "@notmod"){
 							todo = todo.concat(notmod);
+						} else if (mine == "@creator"){
+							todo = todo.concat(creator);
+						} else if (mine == "@notcreator"){
+							todo = todo.concat(notcreator);
 						} else{
 							todo = todo.concat(mine);
 						}
