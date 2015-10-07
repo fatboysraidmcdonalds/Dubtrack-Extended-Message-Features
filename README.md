@@ -10,7 +10,7 @@
 #Notices
 A) All tags will automatically split the message to not exceed the chat limit. <br />
 B) Tags (e.g. @all) will <br />
-	1) Never target you <br />
-	2) Not work if they are not in lowercase <br />
-	3) Not work if they are not a word (e.g. "hi@all" won't work, but "hi @all" will) <br />
+&nbsp;&nbsp;1) Never target you <br />
+&nbsp;&nbsp;2) Not work if they are not in lowercase <br />
+&nbsp;&nbsp;3) Not work if they are not a word (e.g. "hi@all" won't work, but "hi @all" will) <br />
 C) Due to how the word detection (see B3) is designed, all whitespaces will be replaced by spaces, and whitespaces won't chain together(e.g. "hi  all" becomes "hi all") I'm working on a fix for this <br />
