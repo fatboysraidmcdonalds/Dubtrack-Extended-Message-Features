@@ -65,6 +65,7 @@ void(
 					}
 					Say(current);
 				};
+				alert("Message Rules by Fatboysraidmcdonalds loaded successfully");
 			}
 		}catch(err){
 			alert(err);
