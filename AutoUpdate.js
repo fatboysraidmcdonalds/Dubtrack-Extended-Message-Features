@@ -1,4 +1,4 @@
-void( //Void used to prevent odd Chrome behavior with javascript bookmarklets
+void( //Void used to prevent odd Chrome behavior with javascript bookmarklets 
 	(function(){
 		var gitFile = "fatboysraidmcdonalds/Dubtrack-Extended-Message-Features/master/Source.js"; //Change to the repo you wish to load
 		
