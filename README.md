@@ -15,4 +15,4 @@ B) Tags (e.g. @all) will <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Never target you <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Not work if they are not in lowercase <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Not work if they are not a word (e.g. "hi@all" won't work, but "hi @all" will) <br />
-C) Due to how the word detection (see B3) is designed, all whitespaces will be replaced by spaces, and whitespaces won't chain together(e.g. "hi&nbsp;&nbsp;all" becomes "hi&nbsp;all") I'm working on a fix for this <br />
+C) Due to how the word detection (see B3) is designed, all whitespaces will be replaced by spaces, and whitespaces won't chain together(e.g. "hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all" becomes "hi&nbsp;all") I'm working on a fix for this <br />
