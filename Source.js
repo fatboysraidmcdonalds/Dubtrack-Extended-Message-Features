@@ -25,6 +25,8 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 					var notmods = "";
 					var creator = "";
 					var notcreator = "";
+					var admin = "";
+					var notadmin = "";
 					var i = 0;
 					for (i = 0; i < c.length; i++) {
 						var name = c[i].className;
@@ -45,6 +47,7 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 						var ismod = false;
 						var isdj = false;
 						var iscreator = false;
+						var isadmin = false;
 						var append = ("@").concat(ident).concat(" ");
 						if (ident != "") {
 							all = all.concat(append);
@@ -58,6 +61,8 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 								} else if (k == "creator") {
 									ismod = true;
 									iscreator = true;
+								} else if (k == "admin") {
+									isadmin = true;
 								}
 							}
 							if (ismod == true) {
@@ -75,6 +80,11 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 								dj = dj.concat(append);
 							} else {
 								notdj = notdj.concat(append);
+							}
+							if (isadmin == true) {
+								admin = admin.concat(append);
+							} else {
+								notadmin = notadmin.concat(append);
 							}
 						}
 					}
@@ -102,6 +112,10 @@ javascript:void( /*Remove "javascript:" if you don't want this as a bookmark*/
 							todo = todo.concat(creator);
 						} else if (mine == "@notcreator"){
 							todo = todo.concat(notcreator);
+						} else if (mine == "@admin"){
+							todo = todo.concat(admin);
+						} else if (mine == "@nonadmin"){
+							todo = todo.concat(notadmin);
 						} else{
 							todo = todo.concat(mine);
 						}
