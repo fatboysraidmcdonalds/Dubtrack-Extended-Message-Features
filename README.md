@@ -6,6 +6,8 @@
 @notmod - Targets nonmods + noncreators <br />
 @creator - Targets creators <br />
 @notcreator - Targets noncreators <br />
+@admin - Targets admins <br />
+@nonadmin - Targets nonadmins <br />
 
 #Notices
 A) All tags will automatically split the message to not exceed the chat limit. <br />
