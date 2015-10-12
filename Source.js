@@ -33,6 +33,8 @@ void(
 				var notcreator = "";
 				var admin = "";
 				var notadmin = "";
+				var co = "";
+				var notco = "";
 				var i = 0;
 				for (i = 0; i < c.length; i++) {
 					var name = c[i].className;
@@ -54,19 +56,23 @@ void(
 					var isdj = false;
 					var iscreator = false;
 					var isadmin = false;
+					var isco = false;
 					var append = ("@").concat(ident).concat(" ");
 					if (ident != "") {
 						all = all.concat(append);
 						j = 0;
 						for (j = 0; j < split.length; j++) {
 							var k = split[j];
-							if (k == "mod") {
+							if (k == "mod" || k == "manager" || k == "vip" || k == "resident-dj") {
 								ismod = true;
 							} else if (k == "currentDJ") {
 								isdj = true;
 							} else if (k == "creator") {
 								ismod = true;
 								iscreator = true;
+							} else if (k == "co-owner") {
+								ismod = true;
+								isco = true;
 							} else if (k == "admin") {
 								isadmin = true;
 							}
@@ -75,8 +81,14 @@ void(
 							mods = mods.concat(append);
 							if (iscreator == true) {
 								creator = creator.concat(append);
+								notco = notco.concat(append);
 							} else {
 								notcreator = notcreator.concat(append);
+								if (isco == true) {
+									co = co.concat(append);
+								} else {
+									notco = notco.concat(append);
+								}
 							}
 						} else {
 							notmods = notmods.concat(append);
@@ -122,7 +134,11 @@ void(
 						todo = todo.concat(admin);
 					} else if (mine == "@nonadmin"){
 						todo = todo.concat(notadmin);
-					} else{
+					} else if (mine == "@co"){
+						todo = todo.concat(co);
+					} else if (mine == "@notco"){
+						todo = todo.concat(notco);
+					} else {
 						todo = todo.concat(mine);
 					}
 				}
