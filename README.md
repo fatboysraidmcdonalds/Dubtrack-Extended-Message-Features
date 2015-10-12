@@ -6,8 +6,8 @@
 @notmod - Targets nonmods + nonco-owners + noncreators <br />
 @creator - Targets creators <br />
 @notcreator - Targets noncreators <br />
-@co - Targets co-owners
-@notco - Targets nonco-owners
+@co - Targets co-owners <br />
+@notco - Targets nonco-owners <br />
 @admin - Targets admins (Dubtrack staff) <br />
 @nonadmin - Targets nonadmins (not Dubtrack staff) <br />
 
