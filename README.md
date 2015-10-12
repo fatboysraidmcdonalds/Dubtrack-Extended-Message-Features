@@ -2,12 +2,14 @@
 @all - When you type @all, it will replace it with a list of tags targeted to every user <br />
 @dj - Replaces @dj with @(current dj name) <br />
 @notdj - Replaces @notdj with a list of tagstargeted to everyone who isn't the dj <br />
-@mod - Targets mods + creators <br />
-@notmod - Targets nonmods + noncreators <br />
+@mod - Targets mods + co-owners + creators <br />
+@notmod - Targets nonmods + nonco-owners + noncreators <br />
 @creator - Targets creators <br />
 @notcreator - Targets noncreators <br />
-@admin - Targets admins <br />
-@nonadmin - Targets nonadmins <br />
+@co - Targets co-owners
+@notco - Targets nonco-owners
+@admin - Targets admins (Dubtrack staff) <br />
+@nonadmin - Targets nonadmins (not Dubtrack staff) <br />
 
 #Notices
 A) All tags will automatically split the message to not exceed the chat limit. <br />
