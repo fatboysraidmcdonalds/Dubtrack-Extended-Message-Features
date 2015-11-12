@@ -3,7 +3,7 @@ void(
 		try{
 			var chat = document.getElementById("chat-txt-message");
 			var users = document.getElementById("avatar-list");
-			var me_button = document.getElementsByClassName("user-info-button")[0];
+			var me_button = document.getElementsByClassName("header-right-navigation")[0];
 			var me_span = me_button.getElementsByTagName("span")[0];
 			var me = me_span.textContent;
 			if (typeof Dubtrack.room.chat.ExtendedMessageFeaturesQuit == "function"){
