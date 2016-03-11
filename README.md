@@ -12,7 +12,7 @@ Run the script (open this <a href="https://rawgit.com/fatboysraidmcdonalds/Dutra
 <b>@notmod</b> - Targets nonmods + nonco-owners + noncreators <br />
 <b>@creator</b> - Targets creators <br />
 <b>@notcreator</b> - Targets noncreators <br />
-<b>@cov - Targets co-owners <br />
+<b>@cov</b> - Targets co-owners <br />
 <b>@notco</b> - Targets nonco-owners <br />
 <b>@admin</b> - Targets admins (Dubtrack staff) <br />
 <b>@nonadmin</b> - Targets nonadmins (not Dubtrack staff) <br />
