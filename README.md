@@ -23,4 +23,4 @@ Run the script (open this <a href="https://rawgit.com/fatboysraidmcdonalds/Dutra
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>1)</b> Never target you <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2)</b> Not work if they are not in lowercase <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>3)</b> Not work if they are not a word (e.g. "hi@all" won't work, but "hi @all" will) <br />
-<b>C) Due to how the word detection (see <b>B3</b>) is designed, all whitespaces will be replaced by spaces, and whitespaces won't chain together(e.g. "hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all" becomes "hi&nbsp;all") <br />
+<b>C)</b> Due to how the word detection (see <b>B3</b>) is designed, all whitespaces will be replaced by spaces, and whitespaces won't chain together(e.g. "hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all" becomes "hi&nbsp;all") <br />
