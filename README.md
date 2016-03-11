@@ -5,17 +5,17 @@ Overrides Dubtrack.room.chat.sendMessage to allow you to use some features such 
 Run the script (open this <a href="https://rawgit.com/fatboysraidmcdonalds/Dutrack-Extended-Message-Features/master/Bookmark.js" target="_blank">Bookmark</a> link, copy the text on that page, create a bookmark, paste the text into the URL parameter of the bookmark, then save, open the dubtrack tab, and click the bookmark)
 
 #New Tags
-<b>@all</b> - When you type @all, it will replace it with a list of tags targeted to every user <br />
-<b>@dj</b> - Replaces @dj with @(current dj name) <br />
-<b>@notdj</b> - Replaces @notdj with a list of tagstargeted to everyone who isn't the dj <br />
+<b>@all</b> - Targets everyone <br />
+<b>@dj</b> - Targets the DJ <br />
+<b>@notdj</b> - Targets everyone who isn't the DJ <br />
 <b>@mod</b> - Targets mods + co-owners + creators <br />
-<b>@notmod</b> - Targets nonmods + nonco-owners + noncreators <br />
+<b>@notmod</b> - Targets everyone who isn't a mod / co-owner / creator <br />
 <b>@creator</b> - Targets creators <br />
-<b>@notcreator</b> - Targets noncreators <br />
+<b>@notcreator</b> - Targets everyone who isn't a creator <br />
 <b>@co</b> - Targets co-owners <br />
-<b>@notco</b> - Targets nonco-owners <br />
-<b>@admin</b> - Targets admins (Dubtrack staff) <br />
-<b>@nonadmin</b> - Targets nonadmins (not Dubtrack staff) <br />
+<b>@notco</b> - Targets everyone who isn't a co-owner <br />
+<b>@admin</b> - Targets Dubtrack staff <br />
+<b>@nonadmin</b> - Targets everyone who isn't Dubtrack staff <br />
 
 #Notices
 <b>A)</b> All tags will automatically split the message to not exceed the chat limit. <br />
