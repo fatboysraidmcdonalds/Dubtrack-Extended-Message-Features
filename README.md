@@ -19,8 +19,8 @@ Run the script (open this <a href="https://rawgit.com/fatboysraidmcdonalds/Dutra
 
 #Notices
 <b>A)</b> All tags will automatically split the message to not exceed the chat limit. <br />
-<b>B)</b> Tags (e.g. @all) will <br />
+<b>B)</b> These new tags (e.g. <b>@all</b>) will <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>1)</b> Never target you <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2)</b> Not work if they are not in lowercase <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>3)</b> Not work if they are not a word (e.g. "hi@all" won't work, but "hi @all" will) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>3)</b> Not work if they are not a word (e.g. "hi@all</b>" won't work, but "hi <b>@all</b>" will) <br />
 <b>C)</b> Due to how the word detection (see <b>B3</b>) is designed, all whitespaces will be replaced by spaces, and whitespaces won't chain together(e.g. "hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all" becomes "hi&nbsp;all") <br />
