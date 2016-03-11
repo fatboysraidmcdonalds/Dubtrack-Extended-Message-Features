@@ -2,7 +2,7 @@
 Overrides Dubtrack.room.chat.sendMessage to allow you to use some features such as <b>@all</b>
 
 #Instructions
-Run the script (open this <a href="https://rawgit.com/fatboysraidmcdonalds/Dutrack-Extended-Message-Features/master/Bookmark.js" target="_blank">Bookmark</a> link, copy the text on that page, create a bookmark, paste the text into the URL parameter of the bookmark, then save, open the dubtrack tab, and click the bookmark)
+Run the script (open this <a href="https://rawgit.com/fatboysraidmcdonalds/Dubtrack-Extended-Message-Features/master/Bookmark.js" target="_blank">Bookmark</a> link, copy the text on that page, create a bookmark, paste the text into the URL parameter of the bookmark, then save, open the dubtrack tab, and click the bookmark)
 
 #New Tags
 <b>@all</b> - Targets everyone <br />
